@@ -1,7 +1,7 @@
 global.fetch = require('node-fetch');
 process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0;
 
-global.nodeConfig = {ip: '0.0.0.0', port: 0000};
+global.nodeConfig = {ip: '0.0.0.0', port: 0};
 const distribution = require('../distribution');
 const id = distribution.util.id;
 
@@ -291,7 +291,7 @@ const doCrawlText = () => {
 distribution.node.start((server) => {
   localServer = server;
   const crawlerConfig = {gid: 'crawler'};
-  startNodes(() => {
+  // startNodes(() => {
     groupsTemplate(crawlerConfig).put(crawlerConfig,
         crawlerGroup, (e, v) => {
           console.log('Put nodes into group: ', e, v);
@@ -311,7 +311,7 @@ distribution.node.start((server) => {
             });
           });
         });
-  });
+  // });
 });
 
 
