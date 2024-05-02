@@ -21,14 +21,14 @@ let localServer = null;
     The local node will be the orchestrator.
 */
 
-const n1 = {ip: '13.58.185.159', port: 7110};
+// const n1 = {ip: '13.58.185.159', port: 7110};
 const n2 = {ip: '3.147.27.94', port: 7111};
 // const n3 = {ip: '127.0.0.1', port: 7112};
 // const n4 = {ip: '127.0.0.1', port: 7113};
 // const n5 = {ip: '127.0.0.1', port: 7114};
 
 
-crawlerGroup[id.getSID(n1)] = n1;
+// crawlerGroup[id.getSID(n1)] = n1;
 crawlerGroup[id.getSID(n2)] = n2;
 // crawlerGroup[id.getSID(n3)] = n3;
 // crawlerGroup[id.getSID(n4)] = n4;
@@ -36,14 +36,14 @@ crawlerGroup[id.getSID(n2)] = n2;
 
 
 const startNodes = (cb) => {
-  distribution.local.status.spawn(n1, (e, v) => {
+  // distribution.local.status.spawn(n1, (e, v) => {
     distribution.local.status.spawn(n2, (e, v) => {
       // distribution.local.status.spawn(n3, (e, v) => {
       //   distribution.local.status.spawn(n4, (e, v) => {
       //     distribution.local.status.spawn(n5, (e, v) => {
             cb();
           });
-        });
+        // });
     //   });
     // });
   // });
