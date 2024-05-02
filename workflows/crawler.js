@@ -1,7 +1,7 @@
 global.fetch = require('node-fetch');
 process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0;
 
-global.nodeConfig = {ip: '0.0.0.0', port: 0};
+global.nodeConfig = {ip: '0.0.0.0', port: 0000};
 const distribution = require('../distribution');
 const id = distribution.util.id;
 
@@ -22,7 +22,7 @@ let localServer = null;
 */
 
 // const n1 = {ip: '13.58.185.159', port: 7110};
-const n2 = {ip: '3.129.249.87', port: 7111};
+const n2 = {ip: '3.129.249.87', port: 7110};
 // const n3 = {ip: '127.0.0.1', port: 7112};
 // const n4 = {ip: '127.0.0.1', port: 7113};
 // const n5 = {ip: '127.0.0.1', port: 7114};

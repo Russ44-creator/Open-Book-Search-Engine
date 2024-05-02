@@ -12,7 +12,7 @@ process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0;
 // Default configuration
 global.nodeConfig = global.nodeConfig || {
   ip: '0.0.0.0',
-  port: 8080,
+  port: 0,
   onStart: () => {
     console.log('Node started!');
   },
